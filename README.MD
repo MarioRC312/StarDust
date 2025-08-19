@@ -35,3 +35,22 @@
   -Validaciones de formularios  
 
 ## Instalación y ejecución
+
+1. Clona este repositorio:
+
+  -git clone https://github.com/MarioRC312/StarDust.git
+  -copia los archivos en el directorio raíz de tu servidor local, en mi caso uso XAMPP y lo tengo ubicado en "C:\xampp\htdocs\StarDust"
+  -copia de la BBDD en el repositorio dentro de "sql/script.sql"
+  -Abre en el navegador: "http://localhost/TU-REPO"
+
+
+## Aprendizajes
+
+**Con este proyecto reforcé conocimientos en:**
+
+  -Autenticación y seguridad básica de usuarios
+  -Gestión de sesiones en PHP
+  -CRUD completo (crear, leer, actualizar, eliminar) en posts y comentarios
+  -Relaciones entre tablas en MySQL (usuarios, posts, comentarios, etiquetas)
+  -Manejo de formularios y validaciones
+  -Integración de correo electrónico para registro y recuperación de contraseñas
