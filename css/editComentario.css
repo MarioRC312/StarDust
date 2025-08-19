@@ -1,0 +1,83 @@
+/* Fuentes y fondo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #252537);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor de edición de post */
+.edit-post-container {
+    max-width: 600px;
+    background: linear-gradient(135deg, #3c3c79, #32326d);
+    border: 3px solid #fae03c;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Textarea e inputs */
+.form-control {
+    background: #1e1e2f;
+    border: 1px solid #fae03c;
+    color: #fff;
+}
+
+.form-control:focus,
+.form-control:active {
+    box-shadow: none;
+    border-color: #fae03c;
+}
+
+/* Botones */
+.btn-success {
+    background-color: #fae03c;
+    border: none;
+    color: #1e1e2f;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #e0c02a;
+}
+
+.btn-secondary {
+    background-color: #fae03c;
+    border: none;
+    color: #1e1e2f;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e0c02a;
+}
+
+/* Shooting Star Animation */
+.shooting-star {
+    position: fixed;
+    top: 0;
+    left: -100px;
+    width: 5px;
+    height: 5px;
+    background: #fae03c;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.shooting-star.animate {
+    animation: shoot 1s forwards;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(1200px, 600px) scale(0.5);
+        opacity: 0;
+    }
+}

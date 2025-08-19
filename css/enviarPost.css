@@ -1,0 +1,34 @@
+/* Estilos para la animación de estrellas fugaces */
+#animationContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que los clics pasen a los elementos de fondo */
+    z-index: 1050; /* Superior a la mayoría de elementos, pero inferior a los modales si es necesario */
+}
+
+.shooting-star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fae03c;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.shooting-star.animate {
+    animation: shoot forwards;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--end-x), var(--end-y)) scale(0.5);
+        opacity: 0;
+    }
+}

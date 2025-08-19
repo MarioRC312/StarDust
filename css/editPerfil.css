@@ -1,0 +1,92 @@
+/* Fuentes y fondo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #252537);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.edit-profile-container {
+    max-width: 600px;
+    background: linear-gradient(135deg, #3c3c79, #32326d);
+    border: 3px solid #fae03c;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.edit-profile-container h2 {
+    margin-bottom: 30px;
+}
+
+/* Etiquetas de formulario */
+.form-label {
+    font-weight: bold;
+}
+
+/* Inputs, textarea y controles */
+.form-control {
+    background: #1e1e2f;
+    border: 1px solid #fae03c;
+    color: #fff;
+}
+
+/* Ajuste para el textarea */
+.form-control:focus,
+.form-control:active {
+    box-shadow: none;
+    border-color: #fae03c;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fae03c;
+}
+
+/* Botones */
+.edit-profile-container .btn-primary {
+    background-color: #fae03c !important;
+    border: none;
+    color: #1e1e2f !important;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e0c02a;
+}
+
+.btn-secondary {
+    background-color: #fae03c;
+    border: none;
+    color: #1e1e2f;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e0c02a;
+}
+
+/* Espaciado en el contenedor del formulario */
+.mb-3,
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Alineación de botones */
+.d-grid {
+    margin-top: 20px;
+}
