@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
                 <div class="input-box">
                     <label for="username"><ion-icon name="at-outline"></ion-icon></label>
-                    <input type="text" id="username" name="username" required placeholder="Username">
+                    <input type="text" id="username" name="username" required placeholder="Nombre de Usuario">
                 </div>
 
                 <div class="input-box">
@@ -97,12 +97,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="input-box">
                     <label for="firstname"><ion-icon name="person"></ion-icon></label>
-                    <input type="text" id="firstname" name="firstname" required placeholder="First Name">
+                    <input type="text" id="firstname" name="firstname" required placeholder="Nombre">
                 </div>
 
                 <div class="input-box">
                     <label for="lastname"><ion-icon name="person"></ion-icon></label>
-                    <input type="text" id="lastname" name="lastname" required placeholder="Last Name">
+                    <input type="text" id="lastname" name="lastname" required placeholder="Apellidos">
                 </div>
 
                 <div class="input-box">
@@ -112,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="input-box">
                     <label for="veri-pswd"><ion-icon name="lock-closed-outline"></ion-icon></label>
-                    <input type="password" id="veri-pswd" name="veri-pswd" required placeholder="Verify Password">
+                    <input type="password" id="veri-pswd" name="veri-pswd" required placeholder="Verifica Password">
                 </div>
 
                 <div>
@@ -120,14 +120,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div class="extra-options">
-                    <p>Already have an account?</p>
-                    <a href="../index.php">Sign In</a>
+                    <p>¿Ya tienes una cuenta?</p>
+                    <a href="../index.php">Log In</a>
                 </div>
             </form>
         </div>
 
         <footer>
-            <p>&copy; 2025 Star Dust | Creado por Jan Ferrer y Mario Ruiz</p>
+            <p>&copy; 2025 Star Dust | Creado por Mario Ruiz</p>
         </footer>
     </div>
     <script src="./../js/passverif.js"></script>

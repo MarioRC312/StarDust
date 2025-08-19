@@ -81,7 +81,8 @@ function mailBodyConstructor($user, $type)
 {
   if ($type == "verification") {
     $verificationLink = 'http://localhost/controller/mailCheckAccount.php?code=' . $user['activationCode'] . '&mail=' . $user['email'];
-    $body = "
+
+      $body = "
           <html>
           <body>
               <p>Hola " . $user['username'] . ",</p>
